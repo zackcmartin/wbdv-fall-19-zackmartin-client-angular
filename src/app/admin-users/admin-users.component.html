@@ -1,7 +1,7 @@
 <h1>User Admin</h1>
 
 <ul class="list-group">
-  <li class="list-group-item" *ngFor="let user of users" [ngClass]="'wbdv-field wbdv-username'">
+  <li class="list-group-item" *ngFor="let user of users">
     {{user.username}}
     <button (click)="deleteUser(user)">Delete</button>
   </li>

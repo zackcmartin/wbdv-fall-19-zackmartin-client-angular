@@ -3,14 +3,14 @@ import {Injectable} from '@angular/core';
 @Injectable()
 export class ModuleService {
   findAllModules = () =>
-    fetch('http://localhost:8080/api/modules')
+    fetch('https://wbdv-f19-zmartin-java-server.herokuapp.com/api/modules')
       .then(response => response.json())
 
   findModulesForCourse = (courseId) =>
-    fetch(`http://localhost:8080/api/courses/${courseId}/modules`)
+    fetch(`https://wbdv-f19-zmartin-java-server.herokuapp.com/api/courses/${courseId}/modules`)
       .then(response => response.json())
 
   findModuleById = (moduleId) =>
-    fetch(`http://localhost:8080/api/modules/${moduleId}`)
+    fetch(`https://wbdv-f19-zmartin-java-server.herokuapp.com/api/modules/${moduleId}`)
       .then(response => response.json())
 }
