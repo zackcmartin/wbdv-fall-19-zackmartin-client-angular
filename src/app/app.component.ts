@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'wbdv-f19-zackmartin-angular';
+  title = 'wbdv-f19-angular';
 }

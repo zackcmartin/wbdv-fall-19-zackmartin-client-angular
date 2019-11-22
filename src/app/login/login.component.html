@@ -1,0 +1,18 @@
+<h1>Login</h1>
+Username:
+<input [(ngModel)]="username"/>
+<br/>
+Password:
+<input [(ngModel)]="password" type="password"/>
+<br/>
+<br />
+<button (click)="login()">
+  Login
+</button>
+<a routerLink="/register">
+  <button>
+    Sign Up!
+</button>
+</a>
+
+{{message}}
