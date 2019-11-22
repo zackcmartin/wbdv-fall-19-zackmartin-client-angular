@@ -1,7 +1,7 @@
   <li class="list-group-item"
-  [ngClass]="{'active': module == selectedModule}"
-  *ngFor="let module of modules">
-  <a routerLink="/courses/{{courseId}}/modules/{{module.id}}">
+  [ngClass]="{'active': module.id == moduleId}"
+   *ngFor="let module of modules">
+  <a routerLink="/courses/{{courseId}}/modules/{{module.id}}" [ngClass]="'wbdv-link wbdv-module'">
     {{module.title}}
   </a>
 </li>

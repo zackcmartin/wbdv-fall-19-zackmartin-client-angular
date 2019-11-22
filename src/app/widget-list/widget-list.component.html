@@ -1,1 +1,5 @@
-<p>widget-list works!</p>
+<li *ngFor="let widget of widgets" class="list-group-item" [ngClass]="{'active': widget.id == widgetId}">
+    <a routerLink="/courses/{{courseId}}/modules/{{moduleId}}/lessons/{{lessonId}}/topics/{{topicId}}/widgets/{{widget.id}}">
+        {{widget.type}}
+    </a>
+</li>

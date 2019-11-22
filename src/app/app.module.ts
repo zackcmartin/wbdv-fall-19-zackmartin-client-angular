@@ -11,7 +11,6 @@ import {FormsModule} from '@angular/forms';
 import {UserService} from './services/UserService';
 import { AdminUsersComponent } from './admin-users/admin-users.component';
 import { CourseViewerComponent } from './course-viewer/course-viewer.component';
-import { ColumnNavigatorComponent } from './column-navigator/column-navigator.component';
 import { CourseGridComponent } from './course-grid/course-grid.component';
 import { ModuleListComponent } from './module-list/module-list.component';
 import { ModuleService } from './services/ModuleService';
@@ -31,7 +30,6 @@ import { TopicService } from './services/TopicService';
     ProfileComponent,
     AdminUsersComponent,
     CourseViewerComponent,
-    ColumnNavigatorComponent,
     CourseGridComponent,
     ModuleListComponent,
     LessonTabsComponent,

@@ -1,6 +1,9 @@
 <h1>Profile</h1>
-Username:
-<input/>
+First Name:
+<input [ngClass]="'wbdv-field wbdv-firstname'"/>
+<br/>
+Last Name:
+<input [ngClass]="'wbdv-field wbdv-lastname'"/>
 <br/>
 Password:
 <input type="password"/>
@@ -9,12 +12,15 @@ Date of Birth:
 <input type="date"/>
 <br/>
 Email:
-<input type="email"/>
+<input type="email" [ngClass]="'wbdv-field wbdv-email'"/>
+<br/>
+Phone:
+<input type="number" [ngClass]="'wbdv-field wbdv-phone'" />
 <br/>
 <br/>
-<button>Update profile</button>
+<button [ngClass]="'wbdv-field wbdv-update'">Update profile</button>
 <a routerLink="/login">
-    <button>
+    <button [ngClass]="'wbdv-field wbdv-logout'">
         Logout
     </button>
 </a>

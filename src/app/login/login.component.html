@@ -1,12 +1,12 @@
 <h1>Login</h1>
 Username:
-<input [(ngModel)]="username"/>
+<input [(ngModel)]="username" [ngClass]="'wbdv-field wbdv-username'"/>
 <br/>
 Password:
-<input [(ngModel)]="password" type="password"/>
+<input [(ngModel)]="password" type="password" [ngClass]="'wbdv-field wbdv-password'"/>
 <br/>
 <br />
-<button (click)="login()">
+<button (click)="login()" [ngClass]="'wbdv-field wbdv-login'">
   Login
 </button>
 <a routerLink="/register">
@@ -14,5 +14,5 @@ Password:
     Sign Up!
 </button>
 </a>
-
-{{message}}
+<div [ngClass]="'wbdv-message'">
+</div>

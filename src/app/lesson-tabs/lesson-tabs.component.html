@@ -1,5 +1,5 @@
 <li *ngFor="let lesson of lessons" class="list-group-item" [ngClass]="{'active': lesson.id == lessonId}">
-    <a routerLink="/courses/{{courseId}}/modules/{{moduleId}}/lessons/{{lesson.id}}">
+    <a routerLink="/courses/{{courseId}}/modules/{{moduleId}}/lessons/{{lesson.id}}" [ngClass]="'wbdv-link wbdv-lesson'">
         {{lesson.title}}
     </a>
 </li>
