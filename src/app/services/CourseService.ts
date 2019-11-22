@@ -1,4 +1,4 @@
-import {Injectable} from '@angular/core';
+import { Injectable } from '@angular/core';
 
 @Injectable()
 export class CourseService {
@@ -8,6 +8,6 @@ export class CourseService {
 
   findCourseById = courseId =>
     fetch(`https://wbdv-f19-zmartin-java-server.herokuapp.com/api/courses/${courseId}`)
-    .then(response => response.json)
+      .then(response => response.json)
 
 }
